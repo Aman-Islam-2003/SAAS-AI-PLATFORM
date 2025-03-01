@@ -12,7 +12,7 @@ export async function POST(req: Request) {
     const body = await req.json();
     const { messages } = body;
 
-    console.log("amannnnnnnnnnnnnnnnnnnnnnnnnn",process.env.OPENAI_API_KEY)
+    // console.log("amannnnnnnnnnnnnnnnnnnnnnnnnn",process.env.OPENAI_API_KEY)
 
     if (!userId) {
       return new NextResponse("unauthorized", { status: 401 });
