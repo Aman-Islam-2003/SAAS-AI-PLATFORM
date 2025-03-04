@@ -23,6 +23,7 @@ export async function POST(req: Request) {
       return new NextResponse("Messages are required", { status: 400 });
     }
 
+    //paid openai
     console.log(messages, "messages")
     const response = await openai.chat.completions.create({
       model: "gpt-4o-mini",
